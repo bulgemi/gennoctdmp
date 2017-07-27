@@ -10,7 +10,7 @@ def gen_column(f):
     f.write("[COLUMN]\n")
 
     while True:
-        column = input(u"input column information(input format[column name, index], Enter to exit): ")
+        column = input(u"[COLUMN]input column information(input format[column name, index], Enter to exit): ")
 
         if column == "":
             break
@@ -39,7 +39,7 @@ def gen_skip(f):
     f.write("[SKIP]\n")
 
     while True:
-        skip = input(u"input Skip information(Enter to exit): ")
+        skip = input(u"[SKIP]input Skip information(Enter to exit): ")
 
         if skip == "":
             f.write("\n")
@@ -53,7 +53,7 @@ def gen_table(f):
     table_name = ""
 
     while True:
-        table = input(u"input DB table name(Enter to exit): ")
+        table = input(u"[TABLE]input DB table name(Enter to exit): ")
 
         if table == "":
             break
@@ -79,7 +79,7 @@ def gen_table(f):
         gen_skip(f)
 
 if __name__ == "__main__":
-    dmpfile = input(u"input file name: ")
+    dmpfile = input(u"[DUMP]input file name: ")
 
     if dmpfile == "":
         exit()
